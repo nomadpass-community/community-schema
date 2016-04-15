@@ -105,7 +105,7 @@ CREATE FUNCTION where_is(ip inet) RETURNS SETOF internal.ip2location_db5
     LANGUAGE plpgsql
     AS $_$
 DECLARE
-  addr integer;
+  addr bigint;
 BEGIN
   addr := $1 - '0.0.0.0'::inet;
   RETURN QUERY SELECT * FROM internal.ip2location_db5 WHERE int8range(ip_from, ip_to) @> addr::bigint;
