@@ -1,0 +1,5 @@
+%syntax-version=1.0.0
+%project=community-schema
+%uri=https://github.com/nomadpass-community/community-schema
+
+initial 2016-05-02T04:35:19Z Joe Nelson <cred+github@begriffs.com> # Geolocation, nomads, checkins, tags
